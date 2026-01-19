@@ -52,6 +52,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../bing-search/">Bing</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../chrome/">Chrome</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../DuckDuckGo/">DuckDuckGo</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Firefox</a>
@@ -61,6 +63,8 @@
     <li class="toctree-l2"><a class="reference internal" href="#other-ai-features">Other AI features</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#firefox-without-ai">Firefox without AI</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#changing-your-search-engine">Changing your search engine</a>
     </li>
     </ul>
                   </li>
@@ -132,6 +136,24 @@
 <p>Other AI features are available, but they're currently turned off by default.</p>
 <h2 id="firefox-without-ai">Firefox without AI</h2>
 <p>Because Firefox is open source software, people can create their own, altered versions. One of these versions is <a href="https://www.waterfox.com/">Waterfox</a>. In a recent blog post, it was announced that <a href="https://www.waterfox.com/blog/no-ai-here-response-to-mozilla/">Waterfox would not include the majority of Firefox's AI features</a>, and never include large language models (LLMs). If you want a browser that has a similar browsing experience to Firefox, and many of the same features, but without AI, you could try Waterfox.</p>
+<h2 id="changing-your-search-engine">Changing your search engine</h2>
+<p>Most search engines show AI-generated summaries by default. Complete the following steps to choose a search engine that doesn't:</p>
+<ol>
+<li>Open Firefox.</li>
+<li>Go to <a href="about:preferences#search">about:preferences#search</a>.</li>
+<li>Scroll down to the <strong>Search shortcuts</strong> table, and then select <strong>Add</strong>.</li>
+<li>In the <strong>Add Search Engine</strong> panel, enter a name. For example, <code>No AI</code>.</li>
+<li>In the <strong>URL with %s in place of search term</strong> field, choose one of the following:<ul>
+<li>To use Google, enter <code>https://google.com/search?q=%s&amp;udm=14</code>.</li>
+<li>To use DuckDuckGo, enter <code>https://noai.duckduckgo.com/?q=%s</code>.</li>
+</ul>
+</li>
+<li><strong>Optional</strong>: In the <strong>Keyword (optional)</strong> field, enter a short, easy to remember shortcut. For example <code>@noai</code>. You won't need to use this keyword if you complete step 9.</li>
+<li>Select <strong>Add Engine</strong>.</li>
+<li><strong>Optional</strong>: Scroll up to the top of the page, and then select your new search engine from the <strong>Default Search Engine</strong> list.</li>
+</ol>
+<p>Now, whenever you use the address bar to search, the browser will use your non-AI search engine.</p>
+<p>If you don't set the new search engine as your default, you can use your keyword to access the site search. In the address bar, enter the keyword that you chose, press the Tab key, and then enter your search query.</p>
               
             </div>
           </div><footer>

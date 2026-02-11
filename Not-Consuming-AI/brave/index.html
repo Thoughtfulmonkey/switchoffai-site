@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Firefox - Switch Off AI</title>
+    <title>Brave - Switch Off AI</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Firefox";
-        var mkdocs_page_input_path = "Not-Consuming-AI\\firefox.md";
+        var mkdocs_page_name = "Brave";
+        var mkdocs_page_input_path = "Not-Consuming-AI\\brave.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -54,25 +54,19 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../bing-search/">Bing</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../brave/">Brave</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Brave</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#turning-off-leo">Turning off Leo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#turning-off-other-ai-features">Turning off other AI features</a>
+    </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../chrome/">Chrome</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../DuckDuckGo/">DuckDuckGo</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Firefox</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#removing-the-ai-chatbot-shortcut-from-the-sidebar">Removing the AI chatbot shortcut from the sidebar</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#other-ai-features">Other AI features</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#using-ublock-origin-in-firefox">Using uBlock Origin in Firefox</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#firefox-without-ai">Firefox without AI</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#changing-your-search-engine">Changing your search engine</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../firefox/">Firefox</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../google/">Google search</a>
                   </li>
@@ -119,7 +113,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Not Consuming AI</li>
-      <li class="breadcrumb-item active">Firefox</li>
+      <li class="breadcrumb-item active">Brave</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -128,63 +122,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="firefox">Firefox</h1>
-<p>The web browser from the <a href="https://www.mozillafoundation.org/">Mozilla Foundation</a>.</p>
-<p>Mozilla's approach to AI features is <a href="https://blog.mozilla.org/en/firefox/ai-window/">"You decide when, how or whether to use it at all."</a></p>
-<h2 id="removing-the-ai-chatbot-shortcut-from-the-sidebar">Removing the AI chatbot shortcut from the sidebar</h2>
-<p>The sidebar provides shortcuts to things like bookmarks and your browsing history. To remove the AI chatbot from the sidebar, complete the following steps:</p>
+                <h1 id="brave">Brave</h1>
+<p>The browser that aims to deliver an ad-free browser experience.</p>
+<h2 id="turning-off-leo">Turning off Leo</h2>
+<p>By default, the Brave browser has an AI agent installed and turned on. To turn it off, complete the following steps:</p>
 <ol>
-<li>Select the gear icon in the lower-left corner of the Firefox window.</li>
-<li>In the <strong>Customize sidebar</strong> panel, turn off the <strong>AI chatbot</strong> checkbox.</li>
-<li>Close the <strong>Customize sidebar</strong> panel.</li>
+<li>Open Brave.</li>
+<li>Go to <a href="brave://settings/leo-ai">brave://settings/leo-ai</a>.</li>
+<li>Turn off all settings.</li>
+<li>Right click the Leo icon (two four-pointed stars) on the toolbar, and then select <strong>Hide Leo AI icon</strong>.</li>
 </ol>
-<h2 id="other-ai-features">Other AI features</h2>
-<p>Other AI features are available, but they're currently turned off by default.</p>
-<h2 id="using-ublock-origin-in-firefox">Using uBlock Origin in Firefox</h2>
-<p>uBlock Origin is a Firefox plugin that blocks content from specific domains. It's most common use is to block adverts, but you can also block content from known sources of AI.</p>
+<h2 id="turning-off-other-ai-features">Turning off other AI features</h2>
+<p>Brave includes many individual settings related to AI. To turn them off, complete the following steps:</p>
 <ol>
-<li>Open Firefox.</li>
-<li>Select the puzzle/jigsaw piece in the upper-right corner of the window.</li>
-<li>In the <strong>Find more add-ons</strong> field, enter <code>ublock</code>, and then press <strong>Enter</strong>.</li>
-<li>From the list of search results, select <strong>uBlock Origin</strong>.</li>
-<li>On the <strong>Extentions</strong> page, select <strong>Add to Firefox</strong>.</li>
-<li>In the permission panel, select <strong>Add</strong>.</li>
-<li><strong>Optional</strong>: In the confirmation panel, leave the <strong>Pin extension to toolbar</strong> checkbox selected.</li>
-<li>Select <strong>OK</strong>.</li>
-</ol>
-<p>The next step is to install the AI blocklist.</p>
-<ol>
-<li>Go to the <a href="https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist">uBlockOrigin-HUGE-AI-Blocklist GitHub page</a>.</li>
-<li>Select the link in the <strong>One-click import (any platform)</strong> section.</li>
-<li>Select <strong>Subscribe</strong>.</li>
-</ol>
-<p>The uBlockOrigin-HUGE-AI-Blocklist GitHub page also includes instructions to manually install the list, if the one-click import doesn't work.</p>
-<h2 id="firefox-without-ai">Firefox without AI</h2>
-<p>Because Firefox is open source software, people can create their own, altered versions. One of these versions is <a href="https://www.waterfox.com/">Waterfox</a>. In a recent blog post, it was announced that <a href="https://www.waterfox.com/blog/no-ai-here-response-to-mozilla/">Waterfox would not include the majority of Firefox's AI features</a>, and never include large language models (LLMs). If you want a browser that has a similar browsing experience to Firefox, and many of the same features, but without AI, you could try Waterfox.</p>
-<h2 id="changing-your-search-engine">Changing your search engine</h2>
-<p>Most search engines show AI-generated summaries by default. Complete the following steps to choose a search engine that doesn't:</p>
-<ol>
-<li>Open Firefox.</li>
-<li>Go to <a href="about:preferences#search">about:preferences#search</a>.</li>
-<li>Scroll down to the <strong>Search shortcuts</strong> table, and then select <strong>Add</strong>.</li>
-<li>In the <strong>Add Search Engine</strong> panel, enter a name. For example, <code>No AI</code>.</li>
-<li>In the <strong>URL with %s in place of search term</strong> field, choose one of the following:<ul>
-<li>To use Google, enter <code>https://google.com/search?q=%s&amp;udm=14</code>.</li>
-<li>To use DuckDuckGo, enter <code>https://noai.duckduckgo.com/?q=%s</code>.</li>
+<li>Open Brave.</li>
+<li>Go to <a href="brave://flags/">brave://flags/</a>.</li>
+<li>Search for and select <strong>Disabled</strong> for all AI-related flags. Some AI flags that are enabled by default include the following:<ul>
+<li>Brave AI Chat</li>
+<li>Brave AI Chat Rich Search Widgets</li>
+<li>Brave AI Host-Specific Distillation</li>
+<li>Brave AI Chat Rewrite In Place From Context Menu</li>
+<li>Open Leo AI Chat from Brave Search</li>
+<li>Brave AI Chat Web Content Association Default</li>
+<li>AI Mode Omnibox entrypoint</li>
+<li>Omnibox Allow AI Mode Matches</li>
 </ul>
 </li>
-<li><strong>Optional</strong>: In the <strong>Keyword (optional)</strong> field, enter a short, easy to remember shortcut. For example <code>@noai</code>. You won't need to use this keyword if you complete step 9.</li>
-<li>Select <strong>Add Engine</strong>.</li>
-<li><strong>Optional</strong>: Scroll up to the top of the page, and then select your new search engine from the <strong>Default Search Engine</strong> list.</li>
+<li>Select <strong>Relaunch</strong>.</li>
 </ol>
-<p>Now, whenever you use the address bar to search, the browser will use your non-AI search engine.</p>
-<p>If you don't set the new search engine as your default, you can use your keyword to access the site search. In the address bar, enter the keyword that you chose, press the Tab key, and then enter your search query.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../DuckDuckGo/" class="btn btn-neutral float-left" title="DuckDuckGo"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../google/" class="btn btn-neutral float-right" title="Google search">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../bing-search/" class="btn btn-neutral float-left" title="Bing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../chrome/" class="btn btn-neutral float-right" title="Chrome">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -207,10 +178,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../DuckDuckGo/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../bing-search/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../google/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../chrome/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

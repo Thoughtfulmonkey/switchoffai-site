@@ -39,9 +39,9 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Switch off AI</a>
                 </li>
               </ul>
-              <p class="caption"><span class="caption-text">About</span></p>
+              <p class="caption"><span class="caption-text">More</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../About/">About the site</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../More/Webrings/">Webrings</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Not Consuming AI</span></p>
@@ -61,6 +61,8 @@
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Chrome</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#changing-your-search-engine">Changing your search engine</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#turning-off-the-local-ai-model">Turning off the local AI model</a>
     </li>
     </ul>
                   </li>
@@ -130,7 +132,7 @@
 <p>Most search engines show AI-generated summaries by default. Complete the following steps to choose a search engine that doesn't:</p>
 <ol>
 <li>Open Chrome.</li>
-<li>Go to <a href="chrome://settings/search">chrome://settings/search</a>.</li>
+<li>Open a new tab, and enter <code>chrome://settings/search</code> in the address bar.</li>
 <li>select <strong>Manage search engines and site search</strong>.</li>
 <li>Scroll down to the <strong>Site search</strong> section, and then select <strong>Add</strong>.</li>
 <li>In the <strong>Add Site Search</strong> panel, enter a name. For example, <code>No AI</code>.</li>
@@ -145,6 +147,27 @@
 </ol>
 <p>Now, whenever you use the address bar to search, the browser will use your non-AI search engine.</p>
 <p>If you don't set the new search engine as your default, you can use your shortcut to access the site search. In the address bar, enter the shortcut that you chose, press the Tab key, and then enter your search query.</p>
+<h2 id="turning-off-the-local-ai-model">Turning off the local AI model</h2>
+<p>In May 2026, it was widely reported that Google was installing a local AI model on people's computers, without their knowledge. Use the following instructions to remove the file and block it from being reinstalled.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For more information, refer to <a href="https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/">Google Chrome silently installs a 4 GB AI model on your device without consent. At a billion-device scale the climate costs are insane.</a>.</p>
+</div>
+<ol>
+<li>Open Chrome.</li>
+<li>Open a new tab, and enter <code>chrome://settings/system</code> in the address bar.</li>
+<li>Turn off <strong>On-device AI</strong>, if the setting is shown.</li>
+<li>Enter <code>chrome://flags/</code> in the address bar.</li>
+<li>In the search field, enter <code>optimization guide</code>.</li>
+<li>For the <strong>Enables optimization guide on device</strong> setting, select <strong>Disabled</strong> from the list.</li>
+<li>Select the <strong>Relaunch</strong> button that appears. Alternatively, close and reopen Chrome.</li>
+<li>Choose one of the following options:<ul>
+<li>On a Windows device, open Windows Explorer, and go to <code>%LOCALAPPDATA%\Google\Chrome\User Data\</code>.</li>
+<li>On a Mac, open Finder, and go to <code>~/Library/Application Support/Google/Chrome</code>.</li>
+</ul>
+</li>
+<li>Look for an <code>OptGuideOnDeviceModel</code> folder, and delete it if you find it. The main issue is a 4 GB <code>weights.bin</code> file that would be in that folder.</li>
+</ol>
               
             </div>
           </div><footer>

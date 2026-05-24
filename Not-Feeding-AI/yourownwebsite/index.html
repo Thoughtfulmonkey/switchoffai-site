@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Pinterest - Switch Off AI</title>
+    <title>Your own website - Switch Off AI</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Pinterest";
-        var mkdocs_page_input_path = "Not-Feeding-AI\\pinterest.md";
+        var mkdocs_page_name = "Your own website";
+        var mkdocs_page_input_path = "Not-Feeding-AI\\yourownwebsite.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -91,17 +91,19 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../images/">Images</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Pinterest</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#preventing-your-data-from-being-used-to-train-ai">Preventing your data from being used to train AI</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pinterest/">Pinterest</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../x/">X (aka Twitter)</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../YouTube/">YouTube</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../yourownwebsite/">Your own website</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Your own website</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#create-a-robotstxt">Create a robots.txt</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#advanced-ai-crawler-blocking">Advanced AI crawler blocking</a>
+    </li>
+    </ul>
                   </li>
               </ul>
       </div>
@@ -119,7 +121,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Not Feeding AI</li>
-      <li class="breadcrumb-item active">Pinterest</li>
+      <li class="breadcrumb-item active">Your own website</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -128,29 +130,43 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="pinterest">Pinterest</h1>
-<p>A social media site where you create collections of images, videos, websites, and other internet content.</p>
-<h2 id="preventing-your-data-from-being-used-to-train-ai">Preventing your data from being used to train AI</h2>
-<p>Complete the following steps:</p>
+                <h1 id="your-own-website">Your own website</h1>
+<p>If you host your own website, you can take to try to block AI from using your site's contents as training data.</p>
+<h2 id="create-a-robotstxt">Create a robots.txt</h2>
+<p>A robots.txt file sits in the root directory of your website and provides instructions for software called crawlers. Some crawlers catalogue the internet for search engines. Other crawlers gather training data for generative AI. One of the instructions that you can provide in the robots.txt file is to ask AI crawlers not to steal your content.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The instructions in the robots.txt files are only requests. An AI crawler could ignore your request.</p>
+</div>
+<p>To create or update your robots.txt file to try and block AI, complete the following steps:</p>
 <ol>
-<li>Go to <a href="https://ie.pinterest.com/settings/privacy/">https://ie.pinterest.com/settings/privacy/</a>.</li>
-<li>In the <strong>GenAI</strong> section, turn off <strong>Use your data to train Pinterest Canvas</strong>.</li>
+<li>Access the files on your web server. Common methods include the following:<ul>
+<li>If you use hosting with management software, such as CPanel, sign in, and then select the option to access your file server.</li>
+<li>If you have set up SFTP, open the SFTP client on your computer, and then connect to the server.</li>
+<li>If you're unsure, contact the person who set up your website.</li>
+</ul>
+</li>
+<li>Go to the root of the file directory. This is typically the location where the main <code>index.html</code> page for your site is stored.</li>
+<li>
+<p>If there is a robots.txt file, choose to edit it. If there isn't a robots.txt file, choose to create one. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you use SFTP, you might need to copy the file to your computer, or create it on your computer, before you can edit it.</p>
+</div>
+</li>
+<li>
+<p>Go to the <a href="https://github.com/ai-robots-txt/ai.robots.txt">ai.robots.txt GitHub repository</a>, and select the <a href="https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt">robots.txt</a> file.</p>
+</li>
+<li>Copy the contents of the robots.txt file from GitHub to your own robots.txt file.</li>
+<li>Save your robots.txt. If you edited a copy of the file locally on your computer, copy it back to server.</li>
 </ol>
-<p>If you can't use the previous steps to go directly to the privacy settings page, complete the following steps instead:</p>
-<ol>
-<li>Go to https://pinterest.com/. The site might redirect you to a regional version.</li>
-<li>Select the gear icon (<strong>Settings &amp; Support</strong>) in the lower-left corner of the page.</li>
-<li>Select <strong>Settings</strong> from the menu that appears.</li>
-<li>Select <strong>Privacy and data</strong>.</li>
-<li>In the <strong>GenAI</strong> section, turn off <strong>Use your data to train Pinterest Canvas</strong>.</li>
-</ol>
-<p>For more information, refer to <a href="https://help.pinterest.com/en-gb/article/manage-genai-settings">Manage GenAI settings</a> in the Pinterest Help Centre. </p>
+<h2 id="advanced-ai-crawler-blocking">Advanced AI crawler blocking</h2>
+<p>The <a href="https://github.com/ai-robots-txt/ai.robots.txt">ai.robots.txt GitHub repository</a> includes other methods to block AI crawlers, such as using a .htaccess file to return an error page to AI crawlers. Refer to that repository if you have the technical knowledge to evaluate those methods and implement them.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../images/" class="btn btn-neutral float-left" title="Images"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../x/" class="btn btn-neutral float-right" title="X (aka Twitter)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../YouTube/" class="btn btn-neutral float-left" title="YouTube"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -173,10 +189,8 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../images/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../YouTube/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../x/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
